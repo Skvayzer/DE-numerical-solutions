@@ -74,7 +74,7 @@ class GTEtab(Tab):
                         point = [x, y]
                         x = x + h
                         y = y + h * self.methods[i](point[0], point[1], h)
-                        LTE = self.solution(x) - self.solution(point[0]) - h * self.methods[i](point[0], self.solution(point[0]), h)
+                        LTE = abs(y-self.solution(x)) #self.solution(x) - self.solution(point[0]) - h * self.methods[i](point[0], self.solution(point[0]), h)
                         if LTE > maxLTE:
                             maxLTE = LTE
                     GTEs.append(maxLTE)
