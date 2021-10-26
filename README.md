@@ -20,7 +20,7 @@ The app solves Initial Value Problem (IVP):
 
 x ∈ [x0, X], N - number of grid steps
 
-Next let's consider this example:
+Next let's consider this example (Variant 24):
 ![Image of MyVariant](https://github.com/Skvayzer/DE-numerical-solutions/blob/master/images/example.png)
 
 Analytical solution:
